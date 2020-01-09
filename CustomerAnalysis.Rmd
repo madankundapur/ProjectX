@@ -69,7 +69,8 @@ Load data from CSV file
 
 ```{r echo=TRUE}
 # Load store orders data from csv file
-orders <- read_csv("SuperstoreOrders.csv")
+orders <- read_csv("https://raw.githubusercontent.com/madankundapur/ProjectX/master/SuperstoreOrders.csv")
+
 ```
 
 The dataset has 9994 observations with 21 variables and contains store orders data for the United States.

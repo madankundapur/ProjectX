@@ -15,7 +15,7 @@ options(digits=3)
 
 # Load orders data from csv file
 # Source of this file is Tableau Community forums
-orders <- read_csv("SuperstoreOrders.csv")
+orders <- read_csv("https://raw.githubusercontent.com/madankundapur/ProjectX/master/SuperstoreOrders.csv")
 
 #=======================================================
 # Explore, Clean & Tidy Data

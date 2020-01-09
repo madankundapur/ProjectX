@@ -408,7 +408,7 @@ if(!require(gridExtra)) install.packages(&quot;gridExtra&quot;, repos = &quot;ht
 if(!require(knitr)) install.packages(&quot;knitr&quot;, repos = &quot;http://cran.us.r-project.org&quot;)</code></pre>
 <p>Load data from CSV file</p>
 <pre class="r"><code># Load store orders data from csv file
-orders &lt;- read_csv(&quot;SuperstoreOrders.csv&quot;)</code></pre>
+orders &lt;- read_csv(&quot;https://raw.githubusercontent.com/madankundapur/ProjectX/master/SuperstoreOrders.csv&quot;)</code></pre>
 <p>The dataset has 9994 observations with 21 variables and contains store orders data for the United States.</p>
 <pre class="r"><code>str(orders)</code></pre>
 <pre><code>## Classes &#39;spec_tbl_df&#39;, &#39;tbl_df&#39;, &#39;tbl&#39; and &#39;data.frame&#39;: 9994 obs. of  21 variables:
@@ -1004,7 +1004,7 @@ print(acc_model)</code></pre>
 ## 4             K nearest neighbors 0.9622642
 ## 5                   Random forest 0.9937107
 ## 6                        Ensemble 0.8805031</code></pre>
-<pre class="r"><code># Acccuracies plot
+<pre class="r"><code># Accuracies plot
 acc_model %&gt;% ggplot(aes(Accuracy, Model, group=1)) +
   geom_point(color=&quot;orange&quot;) + 
   geom_line(color=&quot;steelblue&quot;) +
